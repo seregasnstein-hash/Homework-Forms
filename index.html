@@ -1,15 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/file.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Создать html-страницу с формой для ввода стилизованного текста.
 После заполнения формы, вывести текст на экран в соответствии с указанными
 стилями -->
-</body>
+    <main>
+      <div class="container">
+        <p class="conteiner_item">Hello </p>
+      </div>
+
+      <form class="form_text">
+        <div>
+          <label for="user_text">Enter your text:</label>
+          <input id="user_text" type="text" required />
+        </div>
+
+        <div>
+          <label for="text_size">Font-size(px):</label>
+          <input id="text_size" type="number" required />
+        </div>
+        <div>
+          <label for="text_weight">Font-weight:</label>
+          <select id="text_weight">
+            <option value="normal">normal</option>
+            <option value="bold">bold</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="text_color">Select color:</label>
+          <input id="text_color" type="color" />
+        </div>
+
+        <input id="btn" type="button" value="изменить" />
+      </form>
+    </main>
+  </body>
 </html>
